@@ -1,0 +1,53 @@
+{
+ "pdt_version": "0.1.0",
+ "inputs_sha256": "35d018ba7b5e5eb7fe4fea7616a5891878594c1a33f941a7ab239f47ac6da2fd",
+ "dataset": "nsduh",
+ "spec": "0.1.0",
+ "files": [
+  "2023.yaml",
+  "2024.yaml",
+  "2025.yaml",
+  "LOSSES.md"
+ ],
+ "losses": {
+  "2023": {
+   "release_version": 1,
+   "variables": 43,
+   "untyped": 3,
+   "availability": 43,
+   "provenance_fields": 172,
+   "open_ranges": 1,
+   "numeric_code_labels": 35,
+   "missing_codes": 74,
+   "groups": 20,
+   "links": 86,
+   "derived": 29
+  },
+  "2024": {
+   "release_version": 1,
+   "variables": 43,
+   "untyped": 3,
+   "availability": 43,
+   "provenance_fields": 172,
+   "open_ranges": 1,
+   "numeric_code_labels": 35,
+   "missing_codes": 75,
+   "groups": 20,
+   "links": 86,
+   "derived": 29
+  },
+  "2025": {
+   "release_version": 1,
+   "variables": 47,
+   "untyped": 3,
+   "availability": 47,
+   "provenance_fields": 188,
+   "open_ranges": 1,
+   "numeric_code_labels": 39,
+   "missing_codes": 79,
+   "groups": 20,
+   "links": 86,
+   "derived": 29
+  }
+ }
+}

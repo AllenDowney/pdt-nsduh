@@ -1,0 +1,998 @@
+{
+ "pdt_version": "0.1.0",
+ "inputs_sha256": "35d018ba7b5e5eb7fe4fea7616a5891878594c1a33f941a7ab239f47ac6da2fd",
+ "dataset": "nsduh",
+ "max_tokens": 20000,
+ "shards": [
+  {
+   "kind": "table",
+   "title": "Release 2023",
+   "basis": "every variable in the release",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2023"
+   },
+   "releases": [
+    "2023"
+   ],
+   "n_in_scope": 43,
+   "rule_versions": {},
+   "notes": [],
+   "count": 43,
+   "files": [
+    {
+     "path": "shards/table/2023.jsonl",
+     "form": "jsonl",
+     "variables": 43,
+     "tokens": 12388
+    },
+    {
+     "path": "shards/table/2023.txt",
+     "form": "txt",
+     "variables": 43,
+     "tokens": 1601
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2024",
+   "basis": "every variable in the release",
+   "full_records": [
+    "metadata/releases/2024/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2024"
+   },
+   "releases": [
+    "2024"
+   ],
+   "n_in_scope": 43,
+   "rule_versions": {},
+   "notes": [],
+   "count": 43,
+   "files": [
+    {
+     "path": "shards/table/2024.jsonl",
+     "form": "jsonl",
+     "variables": 43,
+     "tokens": 12299
+    },
+    {
+     "path": "shards/table/2024.txt",
+     "form": "txt",
+     "variables": 43,
+     "tokens": 1608
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2025",
+   "basis": "every variable in the release",
+   "full_records": [
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2025"
+   },
+   "releases": [
+    "2025"
+   ],
+   "n_in_scope": 47,
+   "rule_versions": {},
+   "notes": [],
+   "count": 47,
+   "files": [
+    {
+     "path": "shards/table/2025.jsonl",
+     "form": "jsonl",
+     "variables": 47,
+     "tokens": 13089
+    },
+    {
+     "path": "shards/table/2025.txt",
+     "form": "txt",
+     "variables": 47,
+     "tokens": 1689
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Adult Depression",
+   "basis": "members of group module-adult-depression (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-adult-depression"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 6,
+   "files": [
+    {
+     "path": "shards/group/module-adult-depression.jsonl",
+     "form": "jsonl",
+     "variables": 6,
+     "tokens": 2170
+    },
+    {
+     "path": "shards/group/module-adult-depression.txt",
+     "form": "txt",
+     "variables": 6,
+     "tokens": 368
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Adult Mental Health",
+   "basis": "members of group module-adult-mental-health (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-adult-mental-health"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 18,
+   "files": [
+    {
+     "path": "shards/group/module-adult-mental-health.jsonl",
+     "form": "jsonl",
+     "variables": 18,
+     "tokens": 8772
+    },
+    {
+     "path": "shards/group/module-adult-mental-health.txt",
+     "form": "txt",
+     "variables": 18,
+     "tokens": 823
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Alcohol",
+   "basis": "members of group module-alcohol (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-alcohol"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 6,
+   "files": [
+    {
+     "path": "shards/group/module-alcohol.jsonl",
+     "form": "jsonl",
+     "variables": 6,
+     "tokens": 1977
+    },
+    {
+     "path": "shards/group/module-alcohol.txt",
+     "form": "txt",
+     "variables": 6,
+     "tokens": 506
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Cocaine",
+   "basis": "members of group module-cocaine (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-cocaine"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/group/module-cocaine.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 908
+    },
+    {
+     "path": "shards/group/module-cocaine.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 221
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Heroin",
+   "basis": "members of group module-heroin (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-heroin"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/group/module-heroin.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 870
+    },
+    {
+     "path": "shards/group/module-heroin.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 209
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Identification",
+   "basis": "members of group module-identification (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-identification"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/group/module-identification.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 708
+    },
+    {
+     "path": "shards/group/module-identification.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 340
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Imputed Adult Depression",
+   "basis": "members of group module-imputed-adult-depression (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-imputed-adult-depression"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/group/module-imputed-adult-depression.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 817
+    },
+    {
+     "path": "shards/group/module-imputed-adult-depression.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 227
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Imputed Adult Mental Health",
+   "basis": "members of group module-imputed-adult-mental-health (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-imputed-adult-mental-health"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/group/module-imputed-adult-mental-health.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 826
+    },
+    {
+     "path": "shards/group/module-imputed-adult-mental-health.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 232
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Imputed Demographics",
+   "basis": "members of group module-imputed-demographics (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-imputed-demographics"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 9,
+   "files": [
+    {
+     "path": "shards/group/module-imputed-demographics.jsonl",
+     "form": "jsonl",
+     "variables": 9,
+     "tokens": 3365
+    },
+    {
+     "path": "shards/group/module-imputed-demographics.txt",
+     "form": "txt",
+     "variables": 9,
+     "tokens": 751
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Marijuana",
+   "basis": "members of group module-marijuana (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-marijuana"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 6,
+   "files": [
+    {
+     "path": "shards/group/module-marijuana.jsonl",
+     "form": "jsonl",
+     "variables": 6,
+     "tokens": 1754
+    },
+    {
+     "path": "shards/group/module-marijuana.txt",
+     "form": "txt",
+     "variables": 6,
+     "tokens": 346
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Methamphetamine",
+   "basis": "members of group module-methamphetamine (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-methamphetamine"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/group/module-methamphetamine.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 951
+    },
+    {
+     "path": "shards/group/module-methamphetamine.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 231
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Nicotine",
+   "basis": "members of group module-nicotine (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-nicotine"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 7,
+   "files": [
+    {
+     "path": "shards/group/module-nicotine.jsonl",
+     "form": "jsonl",
+     "variables": 7,
+     "tokens": 1781
+    },
+    {
+     "path": "shards/group/module-nicotine.txt",
+     "form": "txt",
+     "variables": 7,
+     "tokens": 368
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Pain Relievers",
+   "basis": "members of group module-pain-relievers (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-pain-relievers"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/group/module-pain-relievers.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 1360
+    },
+    {
+     "path": "shards/group/module-pain-relievers.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 331
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Recoded Adolescent Depression",
+   "basis": "members of group module-recoded-adolescent-depression (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-recoded-adolescent-depression"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/group/module-recoded-adolescent-depression.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 835
+    },
+    {
+     "path": "shards/group/module-recoded-adolescent-depression.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 220
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Recoded Adult Mental Health",
+   "basis": "members of group module-recoded-adult-mental-health (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-recoded-adult-mental-health"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 10,
+   "files": [
+    {
+     "path": "shards/group/module-recoded-adult-mental-health.jsonl",
+     "form": "jsonl",
+     "variables": 10,
+     "tokens": 3157
+    },
+    {
+     "path": "shards/group/module-recoded-adult-mental-health.txt",
+     "form": "txt",
+     "variables": 10,
+     "tokens": 506
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Recoded Demographics",
+   "basis": "members of group module-recoded-demographics (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-recoded-demographics"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 6,
+   "files": [
+    {
+     "path": "shards/group/module-recoded-demographics.jsonl",
+     "form": "jsonl",
+     "variables": 6,
+     "tokens": 2168
+    },
+    {
+     "path": "shards/group/module-recoded-demographics.txt",
+     "form": "txt",
+     "variables": 6,
+     "tokens": 401
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Recoded Drug Use",
+   "basis": "members of group module-recoded-drug-use (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-recoded-drug-use"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 28,
+   "files": [
+    {
+     "path": "shards/group/module-recoded-drug-use.jsonl",
+     "form": "jsonl",
+     "variables": 28,
+     "tokens": 5456
+    },
+    {
+     "path": "shards/group/module-recoded-drug-use.txt",
+     "form": "txt",
+     "variables": 28,
+     "tokens": 591
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Recoded Income",
+   "basis": "members of group module-recoded-income (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-recoded-income"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/group/module-recoded-income.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 1022
+    },
+    {
+     "path": "shards/group/module-recoded-income.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 342
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Recoded Mental Health Services Utilization",
+   "basis": "members of group module-recoded-mental-health-services-utilization (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-recoded-mental-health-services-utilization"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 1,
+   "files": [
+    {
+     "path": "shards/group/module-recoded-mental-health-services-utilization.jsonl",
+     "form": "jsonl",
+     "variables": 1,
+     "tokens": 356
+    },
+    {
+     "path": "shards/group/module-recoded-mental-health-services-utilization.txt",
+     "form": "txt",
+     "variables": 1,
+     "tokens": 190
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "section: Sample Weighting And Estimation Vars",
+   "basis": "members of group module-sample-weighting-and-estimation-vars (origin publisher) in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "group": "module-sample-weighting-and-estimation-vars"
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {},
+   "notes": [],
+   "count": 9,
+   "files": [
+    {
+     "path": "shards/group/module-sample-weighting-and-estimation-vars.jsonl",
+     "form": "jsonl",
+     "variables": 9,
+     "tokens": 1487
+    },
+    {
+     "path": "shards/group/module-sample-weighting-and-estimation-vars.txt",
+     "form": "txt",
+     "variables": 9,
+     "tokens": 400
+    }
+   ]
+  },
+  {
+   "kind": "scale",
+   "title": "Scale signature: yes_no",
+   "basis": "variables with this scale signature in the current release (2023, 2024, 2025)",
+   "full_records": [
+    "metadata/releases/2023/variables.jsonl",
+    "metadata/releases/2024/variables.jsonl",
+    "metadata/releases/2025/variables.jsonl"
+   ],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "derived": {
+     "scale_signature": "yes_no"
+    }
+   },
+   "releases": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "n_in_scope": 133,
+   "rule_versions": {
+    "scale_signature_from_valid_labels": "0.2"
+   },
+   "notes": [],
+   "count": 29,
+   "files": [
+    {
+     "path": "shards/scale/yes-no.jsonl",
+     "form": "jsonl",
+     "variables": 29,
+     "tokens": 7656
+    },
+    {
+     "path": "shards/scale/yes-no.txt",
+     "form": "txt",
+     "variables": 29,
+     "tokens": 1092
+    }
+   ]
+  }
+ ],
+ "across_releases": [
+  {
+   "path": "variables.txt",
+   "variables": 47,
+   "tokens": 1903
+  }
+ ]
+}
