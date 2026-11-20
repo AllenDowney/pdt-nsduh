@@ -15,7 +15,7 @@ citation: "Center for Behavioral Health Statistics and Quality. (2026). 2025 Nat
 terms:
   url: "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles"
   summary: >
-    Not yet decided. What the sources say (saved as samhsa-nsduh-datafiles-2025): the public use
+    What the sources say (saved as samhsa-nsduh-datafiles-2025): the public use
     files page offers every file for download with no login, click-through or data use agreement,
     and it states no terms of use or license. It says: "PUFs are full datasets treated with
     confidentiality protections" and "To ensure that individual respondents cannot be identified
@@ -24,10 +24,13 @@ terms:
     copyright or reuse statement was found on SAMHSA's website-policy pages. SAMHSA is a US federal
     agency; the files were prepared by its contractor, RTI International. The same series is also
     distributed by ICPSR (series 64), under ICPSR's own terms, which this repo doesn't use.
-  data: unknown
-  documentation: unknown
-  metadata: unknown
-  llm_processing: unknown
+  data: ship
+  documentation: ship
+  metadata: ship
+  llm_processing: allowed
+  reviewed_by: Allen Downey
+  reviewed_on: '2026-11-20'
+  notice: 'Source: Substance Abuse and Mental Health Services Administration, Center for Behavioral Health Statistics and Quality, National Survey on Drug Use and Health public use files, 2023-2025.'
 dimensions:
   wave:
     label: "year"

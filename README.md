@@ -2,7 +2,7 @@
 
 Metadata for the [National Survey on Drug Use and Health (NSDUH)](https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health), built to the [PublicDataToolkit](https://github.com/AllenDowney/PublicDataToolkit) standard.
 
-**Status:** a slice: 43–47 variables in each of the 2023, 2024 and 2025 public use files (design, demographics, substance use, mental health), with 86 links from SAMHSA's comparability chart. The terms aren't decided yet, so nothing here may ship.
+**Status:** a slice: 43–47 variables in each of the 2023, 2024 and 2025 public use files (design, demographics, substance use, mental health), with 86 links from SAMHSA's comparability chart. The terms are decided (everything ships), but nothing is published yet.
 
 <!-- The sections below are required, in this order (STANDARD.md §2.3; pdt check C11). Replace each placeholder. -->
 
@@ -12,7 +12,11 @@ SAMHSA's annual survey of substance use, mental health and treatment in the civi
 
 ## Terms of use
 
-The terms are at https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles. They haven't been reviewed yet, so nothing built from this repo may ship (STANDARD.md §8). Once a person has decided them, summarize them here; the decision is in [`dataset.yaml`](dataset.yaml).
+The terms are at https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles. Allen Downey reviewed the terms on 2026-11-20: the metadata, the documentation and the common-format data ship, with this notice:
+
+> Source: Substance Abuse and Mental Health Services Administration, Center for Behavioral Health Statistics and Quality, National Survey on Drug Use and Health public use files, 2023-2025.
+
+
 
 ## How to get the data
 
