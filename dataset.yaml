@@ -11,7 +11,7 @@ url: "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use
 description: "SAMHSA's annual survey of substance use, mental health and treatment in the civilian, noninstitutionalized population aged 12 and older, conducted by RTI International. Annual public use files."
 citation: "Center for Behavioral Health Statistics and Quality. (2026). 2025 National Survey on Drug Use and Health Public Use File Codebook, Substance Abuse and Mental Health Services Administration, Rockville, MD"
 # Terms are decided by a person, never by an agent (STANDARD.md §8). Recorded by Claude
-# (PublicDataToolkit Task 60), 2026-11-20; every field stays `unknown` until Allen decides.
+# (PublicDataToolkit Task 60), 2026-11-20; Allen Downey decided them on 2026-11-20.
 terms:
   url: "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles"
   summary: >
