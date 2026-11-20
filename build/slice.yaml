@@ -1,9 +1,88 @@
 # The variables to build, and facts the sources don't give (origin: hand).
 # Edited by hand; read by build/build_records.py.
-release: "2025"
-# Start with 30-50 variables that include the hard cases: a battery, an item
-# asked on only some forms, several wordings, several kinds of missing codes,
-# and anything the publisher has corrected (instructions/03-parse-documentation.md).
-variables: {}
-#  name:
-#    measure: categorical   # categorical, ordinal, continuous, count, identifier, weight, text, date
+#
+# Chosen by Claude (PublicDataToolkit Task 60), 2026-11-20: the design variables,
+# demographics, substance use (tobacco and vaping, alcohol, marijuana, other drugs) and
+# mental health (the K6 distress items and their scale, depression, suicidal thoughts,
+# treatment). A variable is built in every release whose data file has it; names are
+# matched case-insensitively because the 2024 file writes most names in lowercase.
+author: "Claude (PublicDataToolkit Task 60)"
+date: "2026-11-20"
+
+releases:
+  "2023":
+    stata: nsduh-2023-ds0001-bndl-data-stata_v2.zip
+    dta: NSDUH_2023.dta
+    data_source: nsduh-2023-stata
+    codebook: nsduh-2023-ds0001-info-codebook_v2.pdf
+    codebook_source: nsduh-2023-codebook
+  "2024":
+    stata: NSDUH-2024-DS0001-bndl-data-stata_v1.zip
+    dta: NSDUH_2024.dta
+    data_source: nsduh-2024-stata
+    codebook: nsduh-2024-ds0001-info-codebook_v1.pdf
+    codebook_source: nsduh-2024-codebook
+  "2025":
+    stata: NSDUH-2025-DS0001-bndl-data-stata_v1.zip
+    dta: NSDUH_2025.dta
+    data_source: nsduh-2025-stata
+    codebook: NSDUH-2025-DS0001-info-codebook_v1.pdf
+    codebook_source: nsduh-2025-codebook
+
+# name: measure (STANDARD.md §4.1), by hand.
+variables:
+  # design
+  QUESTID2: identifier
+  ANALWT2_C: weight
+  VESTR_C: categorical
+  VEREP: categorical
+  # demographics
+  CATAG6: ordinal
+  IRSEX: categorical
+  NEWRACE2: categorical
+  IREDUHIGHST2: ordinal
+  IRMARIT: categorical
+  INCOME: ordinal
+  # tobacco and vaping
+  CIGEVER: categorical
+  CIGTRY: continuous
+  CIGMON: categorical
+  TOBMON: categorical
+  NICVAPEVER2: categorical
+  NICVAPMON2: categorical
+  # alcohol
+  ALCEVER: categorical
+  ALCTRY: continuous
+  ALCYR: categorical
+  ALCMON: categorical
+  BNGDRKMON: categorical
+  # marijuana
+  MJEVER: categorical
+  MJAGE: continuous
+  MRJYR: categorical
+  MRJMON: categorical
+  # other drugs
+  COCEVER: categorical
+  HEREVER: categorical
+  METHAMEVR: categorical
+  PNRNMLIF: categorical
+  PNRNMYR: categorical
+  ILLYR: categorical
+  ILLYR2: categorical
+  # mental health
+  DSTNRV30: ordinal
+  DSTHOP30: ordinal
+  DSTRST30: ordinal
+  DSTCHR30: ordinal
+  DSTEFF30: ordinal
+  DSTNGD30: ordinal
+  KSSLR6MON: continuous
+  SPDPSTMON: categorical
+  SPDPSTYR: categorical
+  ADDPREV: categorical
+  AMDEYR: categorical
+  IRAMDEYR: categorical
+  YMDEYR: categorical
+  IRSUICTHNK: categorical
+  MHTRTPY3: categorical
+  AMI5YR: categorical

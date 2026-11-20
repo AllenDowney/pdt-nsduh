@@ -4,5 +4,4 @@ Every key under `extensions` in this repo's records, with a reason (STANDARD.md 
 
 | Key | What it holds | Source | Why it's an extension |
 |---|---|---|---|
-
-None yet. An extension that a second dataset also needs is a proposal for the standard.
+| `nsduh.source_variables` | For a recoded variable, the variables the codebook lists above its entry (e.g. `SPDPSTMON` from `KSSLR6MON`) | the codebook | The standard has no field for the inputs of a recode; `derived_from` links are for continuity across releases. A candidate for the standard if another dataset needs it |

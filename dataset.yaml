@@ -3,19 +3,27 @@
 standard_version: "0.1"
 id: nsduh
 title: "National Survey on Drug Use and Health (NSDUH)"
+kind: survey
 publisher:
   name: "Substance Abuse and Mental Health Services Administration (SAMHSA), Center for Behavioral Health Statistics and Quality"
   url: "https://www.samhsa.gov/"
 url: "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health"
-description: "SAMHSA\u0027s annual survey of substance use, mental health and treatment in the civilian, noninstitutionalized population aged 12 and older, conducted by RTI International. Annual public use files."
+description: "SAMHSA's annual survey of substance use, mental health and treatment in the civilian, noninstitutionalized population aged 12 and older, conducted by RTI International. Annual public use files."
 citation: "Center for Behavioral Health Statistics and Quality. (2026). 2025 National Survey on Drug Use and Health Public Use File Codebook, Substance Abuse and Mental Health Services Administration, Rockville, MD"
-# Terms are decided by a person, never by an agent or this template (STANDARD.md §8).
-# Quote what the terms pages say in `summary`, then have a person set each field
-# to ship or build-only and fill reviewed_by and reviewed_on. `unknown` blocks
-# shipping anything that depends on it.
+# Terms are decided by a person, never by an agent (STANDARD.md §8). Recorded by Claude
+# (PublicDataToolkit Task 60), 2026-11-20; every field stays `unknown` until Allen decides.
 terms:
   url: "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles"
-  summary: Not yet reviewed.
+  summary: >
+    Not yet decided. What the sources say (saved as samhsa-nsduh-datafiles-2025): the public use
+    files page offers every file for download with no login, click-through or data use agreement,
+    and it states no terms of use or license. It says: "PUFs are full datasets treated with
+    confidentiality protections" and "To ensure that individual respondents cannot be identified
+    from their responses, NSDUH public-use files (PUFs) have been treated with a number of
+    disclosure-avoidance methods." The codebooks give a "Recommended Citation" and no terms. No
+    copyright or reuse statement was found on SAMHSA's website-policy pages. SAMHSA is a US federal
+    agency; the files were prepared by its contractor, RTI International. The same series is also
+    distributed by ICPSR (series 64), under ICPSR's own terms, which this repo doesn't use.
   data: unknown
   documentation: unknown
   metadata: unknown
@@ -23,10 +31,26 @@ terms:
 dimensions:
   wave:
     label: "year"
+    note: "One wave per annual release. The 2021 and later files are comparable with each other, not with earlier years (a 2020 change in methods)."
+design:
+  weights: [ANALWT2_C]
+  strata: VESTR_C
+  psu: VEREP
+  note: "The person-level analysis weight, the variance stratum and the variance PSU, as named in the 2023 and 2025 files; the 2024 file spells the PSU verep."
 releases:
+  - id: "2023"
+    label: "NSDUH 2023 public use file (v2)"
+    status: current
+    sources: [nsduh-2023-stata, nsduh-2023-codebook, nsduh-puf-comparability-2025]
+  - id: "2024"
+    label: "NSDUH 2024 public use file (v1)"
+    status: current
+    sources: [nsduh-2024-stata, nsduh-2024-codebook, nsduh-puf-comparability-2025]
+    design:
+      weights: [ANALWT2_C]
+      strata: VESTR_C
+      psu: verep
   - id: "2025"
     label: "NSDUH 2025 public use file (v1)"
     status: current
-    sources: [nsduh-2025-stata]
-    # A release with several data files lists `tables`, each with an id, label,
-    # sources, key and references (STANDARD.md §2.1). Examples: pdt-nsfg, pdt-fars.
+    sources: [nsduh-2025-stata, nsduh-2025-codebook, nsduh-puf-comparability-2025]

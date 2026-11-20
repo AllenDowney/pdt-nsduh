@@ -1,17 +1,120 @@
-# Every file this repo depends on (STANDARD.md §2.2): data files, codebooks,
-# questionnaires, release notes, errata and terms pages, upstream packages.
-# Schema: PublicDataToolkit/schema/sources.schema.json. Edited by hand.
-#
-# Once a file is fetched, fill fetched_on, bytes and sha256 (pdt check C6).
-# An upstream package also needs `version` (a tag or commit), and documentation
-# says which releases it `documents`.
+# Every file this repo depends on (STANDARD.md §2.2). Edited by hand.
+# Schema: PublicDataToolkit/schema/sources.schema.json.
+# redistribution is `unknown` for every file until Allen decides SAMHSA's terms (dataset.yaml).
 sources:
-  - id: nsduh-2025-stata
-    title: "NSDUH 2025 public use file (v1), data"
-    kind: data
-    format: stata
-    url: "https://www.samhsa.gov/data/system/files/media-puf-file/NSDUH-2025-DS0001-bndl-data-stata_v1.zip"
-    path: data/raw/CHANGE-ME
-    releases: ["2025"]
-    redistribution: unknown
-    acquisition: automated
+- id: nsduh-2023-stata
+  title: NSDUH 2023 public use file (v2), Stata bundle
+  kind: data
+  format: stata
+  url: https://www.samhsa.gov/data/system/files/media-puf-file/nsduh-2023-ds0001-bndl-data-stata_v2.zip
+  path: data/raw/nsduh-2023-ds0001-bndl-data-stata_v2.zip
+  releases:
+  - '2023'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 19598164
+  sha256: bc97698a215f5a45cc1f8e1fb4e4cd973c9957bc140bf735687e606e1e8a6c48
+  note: A zip holding the .dta and a supplemental .do file; the build reads the .dta, unzipped to data/interim/.
+- id: nsduh-2023-codebook
+  title: NSDUH 2023 public use file codebook (v2)
+  kind: codebook
+  format: pdf
+  url: https://www.samhsa.gov/data/system/files/media-puf-file/nsduh-2023-ds0001-info-codebook_v2.pdf
+  path: data/raw/nsduh-2023-ds0001-info-codebook_v2.pdf
+  releases:
+  - '2023'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 5453958
+  sha256: b19c158bc8542cbfe896c272b35cb6bfe65f3ef890aabaf699514a510563fad2
+  note: Read as text with pdftotext -layout into data/interim/.
+- id: nsduh-2024-stata
+  title: NSDUH 2024 public use file (v1), Stata bundle
+  kind: data
+  format: stata
+  url: https://www.samhsa.gov/data/system/files/media-puf-file/NSDUH-2024-DS0001-bndl-data-stata_v1.zip
+  path: data/raw/NSDUH-2024-DS0001-bndl-data-stata_v1.zip
+  releases:
+  - '2024'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 19563487
+  sha256: eb49c9549b216cb83e32d23aa98979ac90003d64ee997ab9e458643613e4f696
+  note: A zip holding the .dta and a supplemental .do file; the build reads the .dta, unzipped to data/interim/.
+    The 2024 file spells 1,881 of its 2,632 names in lowercase; its codebook and the other years use capitals.
+- id: nsduh-2024-codebook
+  title: NSDUH 2024 public use file codebook (v1)
+  kind: codebook
+  format: pdf
+  url: https://www.samhsa.gov/data/system/files/media-puf-file/nsduh-2024-ds0001-info-codebook_v1.pdf
+  path: data/raw/nsduh-2024-ds0001-info-codebook_v1.pdf
+  releases:
+  - '2024'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 5024822
+  sha256: c70a7fdb5e7889d3a804c20c2114e085acea4f06bdb295e736b29a2996443421
+  note: Read as text with pdftotext -layout into data/interim/.
+- id: nsduh-2025-stata
+  title: NSDUH 2025 public use file (v1), Stata bundle
+  kind: data
+  format: stata
+  url: https://www.samhsa.gov/data/system/files/media-puf-file/NSDUH-2025-DS0001-bndl-data-stata_v1.zip
+  path: data/raw/NSDUH-2025-DS0001-bndl-data-stata_v1.zip
+  releases:
+  - '2025'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 16108611
+  sha256: 3aef090178b8658d0df9667b23b6f0d1c626114db20d5fd28f41da1d1878ec13
+  note: A zip holding the .dta and a supplemental .do file; the build reads the .dta, unzipped to data/interim/.
+- id: nsduh-2025-codebook
+  title: NSDUH 2025 public use file codebook (v1)
+  kind: codebook
+  format: pdf
+  url: https://www.samhsa.gov/data/system/files/media-puf-file/NSDUH-2025-DS0001-info-codebook_v1.pdf
+  path: data/raw/NSDUH-2025-DS0001-info-codebook_v1.pdf
+  releases:
+  - '2025'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 5680230
+  sha256: 7948eff8290bf6b4c3cd804ef6778100527b724d3cea80dfc36b5509b3b22577
+  note: Read as text with pdftotext -layout into data/interim/.
+- id: nsduh-puf-comparability-2025
+  title: NSDUH PUF variable crosswalk chart, 2021-2025 (comparability across years)
+  kind: crosswalk
+  format: xlsx
+  url: https://www.samhsa.gov/data/sites/default/files/variable-crosswalk/PUFComparability_2025.xlsx
+  path: data/raw/PUFComparability_2025.xlsx
+  releases:
+  - '2023'
+  - '2024'
+  - '2025'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 489159
+  sha256: fb41e4449ab0f48b28cf054a5a4ec41b38b5343bc07cc6ef42241cb739f3c6b1
+  note: The source of links between releases (a variable keeps its comparability number while comparable)
+    and of the module groups.
+- id: samhsa-nsduh-datafiles-2025
+  title: SAMHSA's NSDUH public use files page (2025), saved as evidence for the terms
+  kind: other
+  format: html
+  url: https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles/2025
+  path: data/raw/samhsa-nsduh-datafiles-2025.html
+  releases:
+  - '2025'
+  redistribution: unknown
+  acquisition: automated
+  fetched_on: '2026-11-20'
+  bytes: 258210
+  sha256: fe3e4178b21a7dc0541e3c9c5016fca46cc9210e1a8a328a7282cafe76351284
+  note: Kept because the terms summary in dataset.yaml quotes it.

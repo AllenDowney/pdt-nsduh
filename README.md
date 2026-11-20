@@ -2,7 +2,7 @@
 
 Metadata for the [National Survey on Drug Use and Health (NSDUH)](https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health), built to the [PublicDataToolkit](https://github.com/AllenDowney/PublicDataToolkit) standard.
 
-**Status:** started from the PublicDataToolkit template; no records yet.
+**Status:** a slice: 43–47 variables in each of the 2023, 2024 and 2025 public use files (design, demographics, substance use, mental health), with 86 links from SAMHSA's comparability chart. The terms aren't decided yet, so nothing here may ship.
 
 <!-- The sections below are required, in this order (STANDARD.md §2.3; pdt check C11). Replace each placeholder. -->
 
@@ -16,7 +16,7 @@ The terms are at https://www.samhsa.gov/data/data-we-collect/nsduh-national-surv
 
 ## How to get the data
 
-The files are listed in [`sources.yaml`](sources.yaml), with where to get each and its checksum.
+The files are listed in [`sources.yaml`](sources.yaml), with where to get each and its checksum: SAMHSA's public use files page offers each year's data (Stata and other formats) and codebook without a login. `make download ARGS=--accept-terms` fetches them into `data/raw/`; unzip each `.dta` and convert each codebook with `pdftotext -layout` into `data/interim/` before `make build`.
 
 ## How to use the metadata
 
