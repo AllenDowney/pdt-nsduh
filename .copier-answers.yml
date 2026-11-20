@@ -1,0 +1,25 @@
+# Changes here will be overwritten by Copier; do not edit by hand.
+_commit: v0.1.0
+_src_path: /home/downey/PublicDataToolkit
+citation: Center for Behavioral Health Statistics and Quality. (2026). 2025 National
+    Survey on Drug Use and Health Public Use File Codebook, Substance Abuse and Mental
+    Health Services Administration, Rockville, MD
+dataset_id: nsduh
+dataset_url: https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health
+description: SAMHSA's annual survey of substance use, mental health and treatment
+    in the civilian, noninstitutionalized population aged 12 and older, conducted
+    by RTI International. Annual public use files.
+form_label: ''
+publisher_name: Substance Abuse and Mental Health Services Administration (SAMHSA),
+    Center for Behavioral Health Statistics and Quality
+publisher_url: https://www.samhsa.gov/
+release_id: '2025'
+release_label: NSDUH 2025 public use file (v1)
+source_format: stata
+source_id: nsduh-2025-stata
+source_kind: data
+source_url: https://www.samhsa.gov/data/system/files/media-puf-file/NSDUH-2025-DS0001-bndl-data-stata_v1.zip
+standard_version: '0.1'
+terms_url: https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles
+title: National Survey on Drug Use and Health (NSDUH)
+wave_label: year
