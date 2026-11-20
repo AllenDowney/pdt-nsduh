@@ -988,6 +988,7 @@
    ]
   }
  ],
+ "release_shards": 12,
  "across_releases": [
   {
    "path": "variables.txt",
